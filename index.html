@@ -28,6 +28,7 @@
 
     function playAudio() { 
         audio.play(); 
+        execute();
     }
 </script>
 
@@ -40,6 +41,10 @@
     window.onload = function() {
         console.log("loaded");
         document.getElementById("AMONG_US").play();
+        execute();
+    }
+
+    function execute() { 
         setTimeout(2500);
         while(x > 50){
             console.log("test");
