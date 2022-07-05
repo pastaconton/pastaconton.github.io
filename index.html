@@ -24,8 +24,10 @@
 
 <!--button-->
 <script>
+    var audio = document.getElementById("AMONG_US");
+
     function playAudio() { 
-        document.getElementById("AMONG_US");
+        audio.play(); 
         execute();
     }
 </script>
@@ -36,6 +38,9 @@
 <!--main-->
 <script>
     x = 0
+    var Normal_Fart = document.getElementById("Normal_Fart");
+    var Tiny_Fart = document.getElementById("Tiny_Fart");
+    var Reverb_Fart = document.getElementById("Reverb_Fart");
     window.onload = function() {
         console.log("loaded");
         document.getElementById("AMONG_US").play();
@@ -50,11 +55,11 @@
             x++
             random = Math.floor(Math.random() * 3); // Returns a random integer from 0 to 2
             if (random == 0)
-                document.getElementById("Normal_Fart").play();
+                Normal_Fart.play();
             if (random == 1)
-                document.getElementById("Tiny_Fart").play();
+                Tiny_Fart.play();
             if (random == 2)
-                document.getElementById("Reverb_Fart").play();
+                Reverb_Fart.play();
         }
     }
 </script>
