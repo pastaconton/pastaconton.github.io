@@ -24,10 +24,8 @@
 
 <!--button-->
 <script>
-    var audio = document.getElementById("AMONG_US");
-
     function playAudio() { 
-        audio.play(); 
+        document.getElementById("AMONG_US");
         execute();
     }
 </script>
@@ -47,7 +45,7 @@
     function execute() { 
         setTimeout(2500);
         while(x > 50){
-            console.log("test");
+            console.log("executed");
             setTimeout(500);
             x++
             random = Math.floor(Math.random() * 3); // Returns a random integer from 0 to 2
