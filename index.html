@@ -39,8 +39,8 @@
     x = 0
     window.onload = function() {
         document.getElementById("AMONG_US").play();
-        setTimeout(1000);
-        while(x < 50){
+        setTimeout(2500);
+        while(x > 50){
             setTimeout(500);
             x++
             random = Math.floor(Math.random() * 3); // Returns a random integer from 0 to 2
@@ -49,7 +49,7 @@
             if (random == 1)
                 document.getElementById("Tiny_Fart").play();
             if (random == 2)
-            document.getElementById("Reverb_Fart").play();
+                document.getElementById("Reverb_Fart").play();
         }
     }
 </script>
