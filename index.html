@@ -42,11 +42,11 @@
     window.onload = function() {
         console.log("loaded");
         document.getElementById("AMONG_US").play();
+        setTimeout(() => { execute(); }, 2500);
     }
 
     function execute() {
         console.log("executed function");
-        setTimeout(2500);
         while(x < 50){
             console.log("executed loop");
             setTimeout(500);
