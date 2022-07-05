@@ -38,10 +38,11 @@
 <script>
     x = 0
     window.onload = function() {
+        console.log("loaded");
         document.getElementById("AMONG_US").play();
         setTimeout(2500);
         while(x > 50){
-            console.console.log("test");
+            console.log("test");
             setTimeout(500);
             x++
             random = Math.floor(Math.random() * 3); // Returns a random integer from 0 to 2
