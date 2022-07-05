@@ -35,7 +35,6 @@
 
 <!--main-->
 <script>
-    x = 0
     var Normal_Fart = document.getElementById("Normal_Fart");
     var Tiny_Fart = document.getElementById("Tiny_Fart");
     var Reverb_Fart = document.getElementById("Reverb_Fart");
@@ -47,7 +46,7 @@
 
     function execute() {
         console.log("executed function");
-        while(x < 50){
+        for (let x = 0; x < 50; x++){
             setTimeout(() => { IHaveNoIdeaHowToCode(); }, 500);
         }
     }
