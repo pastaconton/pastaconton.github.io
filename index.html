@@ -49,13 +49,13 @@
 
     function execute() {
         console.log("executed function");
-        //setTimeout(2500);
+        setTimeout(2500);
         while(x < 50){
             console.log("executed loop");
             setTimeout(500);
             x++
             random = Math.floor(Math.random() * 3); // Returns a random integer from 0 to 2
-            console.log(random);
+            console.log("sound" + String(random));
             if (random == 0)
                 Normal_Fart.play();
             if (random == 1)
